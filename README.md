@@ -60,7 +60,7 @@ local half_sym = {
  ![图片](https://user-images.githubusercontent.com/37499529/150643899-a08f678e-a460-4de9-8165-a9edf8f37c93.png)
 
 ## 如何安裝
-
+### 手動安裝
 如果未安裝過任何依賴Lua腳本的輸入方案，則將所有文件放入用戶文件夾內，隨後部署即可。
 
 如果安裝過依賴Lua腳本的輸入方案，或正在使用依賴Lua腳本的輸入方案，則需按如下步驟進行：
@@ -70,3 +70,6 @@ local half_sym = {
 2、將其他文件放入用戶文件夾內
 
 需要注意的是，不要改變現有的文件夾結構，即：lua文件夾須在用戶文件夾內，RdeEM文件夾則須在lua文件夾內。
+
+### 自動線上安裝
+用PowerShell執行Install-rime-double-terra.ps1即可
