@@ -71,5 +71,5 @@ local half_sym = {
 
 需要注意的是，不要改變現有的文件夾結構，即：lua文件夾須在用戶文件夾內，RdeEM文件夾則須在lua文件夾內。
 
-### 自動線上安裝
-用PowerShell執行Install-rime-double-terra.ps1即可
+### 在Windows上自動線上安裝
+只要下載Install-rime-double-terra.ps1並用PowerShell執行Install-rime-double-terra.ps1即可
