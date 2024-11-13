@@ -77,7 +77,7 @@ speller:
     - xform/uo([12345])$/O$1/
     - xform/ie([12345])$/P$1/
     - xform/i?ong([12345])$/S$1/
-    - xform/ing([12345])$|uai$/K$1/
+    - xform/ing([12345])$|uai([12345])$/K$1/
     - xform/(.)ai([12345])$/$1D$2/
     - xform/(.)en([12345])$/$1F$2/
     - xform/(.)eng([12345])$/$1G$2/
