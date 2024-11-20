@@ -215,31 +215,31 @@ reverse_lookup:
   preedit_format:
     
   comment_format:
-    - xform/(iu)([1-4])/-$1Q$2/
-    - xform/(ei)([1-4])/-$1W$2/
-    - xform/([uv]e)([1-4])/-$1T$2/
-    - xform/(un)([1-4])/-$1Y$2/
+    - xform/(iu)([1-5])/-$1Q$2/
+    - xform/(ei)([1-5])/-$1W$2/
+    - xform/([uv]e)([1-5])/-$1T$2/
+    - xform/(un)([1-5])/-$1Y$2/
     - xform/^(sh)/-$1U/
     - xform/^(ch)/-$1I/
     - xform/^(zh)/-$1V/
-    - xform/(uo)([1-4])/-$1O$2/
-    - xform/(ie)([1-4])/-$1P$2/
-    - xform/(i?ong)([1-4])/-$1S$2/
-    - xform/(ing|uai)([1-4])/-$1K$2/
-    - xform/(ai)([1-4])/-$1D$2/
-    - xform/(eng)([1-4])/-$1G$2/
-    - xform/(en)([1-4])/-$1F$2/
-    - xform/([iu]ang)([1-4])/-$1L$2/
-    - xform/(uan)([1-4])/-$1R$2/
-    - xform/(ang)([1-4])/-$1H$2/
-    - xform/(ian)([1-4])/-$1M$2/
-    - xform/(an)([1-4])/-$1J$2/
-    - xform/(ou)([1-4])/-$1Z$2/
-    - xform/(iao)([1-4])/-$1N$2/
-    - xform/([iu]a)([1-4])/-$1X$2/
-    - xform/(ao)([1-4])/-$1C$2/
-    - xform/(ui)([1-4])/-$1V$2/
-    - xform/(in)([1-4])/-$1B$2/
+    - xform/(uo)([1-5])/-$1O$2/
+    - xform/(ie)([1-5])/-$1P$2/
+    - xform/(i?ong)([1-5])/-$1S$2/
+    - xform/(ing|uai)([1-5])/-$1K$2/
+    - xform/(ai)([1-5])/-$1D$2/
+    - xform/(eng)([1-5])/-$1G$2/
+    - xform/(en)([1-5])/-$1F$2/
+    - xform/([iu]ang)([1-5])/-$1L$2/
+    - xform/(uan)([1-5])/-$1R$2/
+    - xform/(ang)([1-5])/-$1H$2/
+    - xform/(ian)([1-5])/-$1M$2/
+    - xform/(an)([1-5])/-$1J$2/
+    - xform/(ou)([1-5])/-$1Z$2/
+    - xform/(iao)([1-5])/-$1N$2/
+    - xform/([iu]a)([1-5])/-$1X$2/
+    - xform/(ao)([1-5])/-$1C$2/
+    - xform/(ui)([1-5])/-$1V$2/
+    - xform/(in)([1-5])/-$1B$2/
 
 
 punctuator:
