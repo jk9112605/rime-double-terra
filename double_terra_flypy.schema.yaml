@@ -49,8 +49,8 @@ engine:
     - script_translator
   filters:
     - simplifier
-    - lua_filter@rdeem_hfcom_filter
-    - lua_filter@rdeem_w2c_filter
+    #- lua_filter@rdeem_hfcom_filter
+    #- lua_filter@rdeem_w2c_filter
     - uniquifier
 
 menu:
