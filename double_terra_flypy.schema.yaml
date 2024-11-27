@@ -114,6 +114,12 @@ translator:
   dictionary: double_terra
   prism: double_terra_flypy
   preedit_format:
+    #keep original letters
+    - xform/(.+)/$1 \($1\)/  # 复制一份副本
+    - xlit/QWERTYUIOPASDFGHJKLZXCVBNM/ⓆⓌⒺⓇⓉⓎⓊⒾⓄⓅⒶⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ  # 保留原大写
+    - xform/(.+)(?<= \()(.+)/$1\U$2\E/ # 保留原码的转为大写
+    - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ # 保留原码的部分，再从大写转写
+    #convert full pinyin
     - xform/([bpmfdtnljqx])n/$1iao/
     - xform/(\w)g/$1eng/
     - xform/(\w)q/$1iu/
@@ -175,6 +181,11 @@ translator:
     - 'xform ü/ ǘ'
     - 'xform ü, ǚ'
     - 'xform ü\. ǜ'
+    #end of converting full pinyin, then append original letters with ()
+    - xform/([ⓐ-ⓩ]+)\s/$1/ #去除紧随其后的制表符
+    - xlit/ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ/abcdefghijklmnopqrstuvwxyz # 转回小写
+    - xlit/ⓆⓌⒺⓇⓉⓎⓊⒾⓄⓅⒶⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/QWERTYUIOPASDFGHJKLZXCVBNM/ # 恢复原大写
+
   comment_format:
     - xform ([aeiou])(ng?|r)([1234]) $1$3$2
     - xform ([aeo])([iuo])([1234]) $1$3$2
