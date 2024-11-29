@@ -281,6 +281,7 @@ punctuator:
     '!' : '!'
     '(' : '('
     ')' : ')'
+    '_' : '_'
 
 key_binder:
   import_preset: default
