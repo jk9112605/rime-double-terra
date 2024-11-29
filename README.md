@@ -1,4 +1,5 @@
 # rime-double-terra
+本專案是基於 https://github.com/Reniastyc/rime-double-terra 的小鶴雙拼帶聲調輸入法。
 
 ## 用於RIME的地球拼音小鶴雙拼方案
 
